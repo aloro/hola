@@ -53,7 +53,21 @@ public class EjercicioConcesionario {
 		vehiculos.add(astra);
 
 		for (Vehiculo v : vehiculos) {
-			System.out.println(v.toString());
+
+			System.out.println();
+			System.out.println(v.getModelo());
+			System.out.println("Plazas: " + v.getPlazas());
+			System.out.println("Potencia: " + v.getPotencia());
+
+			if (v instanceof VehiculoElectrico) {
+				System.out.println("Capacidad de bateria: " + ((VehiculoElectrico) v).getCapacidadBaterias());
+			} else if (v instanceof VehiculoDiesel) {
+				System.out.println("Combustible: " + ((VehiculoDiesel) v).getCapacidadDepositoCombustible());
+			}
+
+			System.out.println("-------------------------------");
+
+			// System.out.println(v.toString());
 		}
 
 	}
