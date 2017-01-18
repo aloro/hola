@@ -27,4 +27,9 @@ public class Animal {
 		this.precio = precio;
 	}
 
+	@Override
+	public String toString() {
+		return "Animal [raza=" + raza + ", precio=" + precio + "]";
+	}
+
 }

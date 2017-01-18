@@ -7,6 +7,7 @@ import java.io.Serializable;
  * Pueden existir interfaces vacias @see Serializable.<br>
  * Soportan herencia multiple, al contrario que las clases.<br>
  * Pueden contener variables, pero seran finales.<br>
+ * Las interfaces no son instanciables, no se pueden crear objetos.<br>
  * 
  */
 public interface Conducible extends Serializable, Cloneable {

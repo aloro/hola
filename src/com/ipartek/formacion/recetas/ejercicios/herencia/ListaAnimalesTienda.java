@@ -2,11 +2,20 @@ package com.ipartek.formacion.recetas.ejercicios.herencia;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * Ejercicio para aprender a usar la herencia en interfaces.<br>
+ * Capitulo 8 del libro Java 7.<br>
+ * 
+ * @author Curso
+ *
+ */
+
 public class ListaAnimalesTienda {
 
-	public static ArrayList<Vendible> listaAnimales = new ArrayList<Vendible>();
-
 	public static void main(String[] args) {
+
+		ArrayList<Vendible> listaAnimales = new ArrayList<Vendible>();
 
 		Burro astotxo = new Burro("Majorero", 2000f);
 		Burro igor = new Burro("Cordobesa", 300f, "Igor");
@@ -21,8 +30,19 @@ public class ListaAnimalesTienda {
 		for (Vendible v : listaAnimales) {
 			if (v instanceof Burro) {
 				((Burro) v).generarFactura();
-			} else {
+			} else if (v instanceof Pajaro) {
 				((Pajaro) v).generarFactura();
+
+				/*
+				 * Tambien se puede preguntar por Interfaces
+				 * if (p instanceof Volador){
+				 * 
+				 * }
+				 * 
+				 */
+
+			} else {
+				System.out.println("**** No se sabe qué es " + v.toString());
 			}
 		}
 
