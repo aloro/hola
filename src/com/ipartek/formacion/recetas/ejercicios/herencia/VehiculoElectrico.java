@@ -24,6 +24,10 @@ public class VehiculoElectrico extends Vehiculo {
 		this.capacidadBaterias = capacidadBaterias;
 	}
 
+	public void arrancar() {
+		System.out.println("Bateria enchufada y a toda maquina");
+	}
+
 	@Override
 	public String toString() {
 		return "VehiculoElectrico [capacidadBaterias=" + capacidadBaterias + "] extends " + super.toString();

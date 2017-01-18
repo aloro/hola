@@ -16,6 +16,12 @@ public class VehiculoDiesel extends Vehiculo {
 		this.capacidadDepositoCombustible = MIN_CAPACIDAD_DEPOSITO_COMBUSTIBLE;
 	}
 
+	@Override
+	public void arrancar() {
+		// super.arrancar()
+		System.out.println("arrancado -> Super Velocidad");
+	}
+
 	public float getCapacidadDepositoCombustible() {
 		return capacidadDepositoCombustible;
 	}
